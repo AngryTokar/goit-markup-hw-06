@@ -46,7 +46,7 @@
 		<section class="section hero">
 			<div class="container">
 				<h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-				<button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+				<button class="button hero-button" type="button" data-modal-open>Заказать услугу</button>
 			</div>
 		</section>
 		<!--Наши преимущества-->
@@ -369,14 +369,65 @@
 					</li>
 				</ul>
 			</div>
+			<div class="follow">
+				<h3 class="text-follow">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+				<form class="follow-form">
+					<input type="text" class="follow-input" name="E-mail" id="E-mail" placeholder="E-mail">
+					<label for="E-mail"></label>
+					<button class="button follow-button" type="submit"><span>Подписаться</span> 
+							<svg class="icon-follow" Width="24" Height="24">
+								<use href="./images/icons.svg#icon-icon-send"></use>
+							</svg>
+					</button>
+				</form>
+			</div>
 		</div>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="modal-close-btn" data-modal-close>
-					<svg Width="18" Height="18">
+					<svg class="close-icon" Width="18" Height="18">
 						<use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
 					</svg>
 				</button>
+				<h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+				<form class="modal-form" autocomplete="on">
+					<div class="form-field">
+						<label class="form-label" for="user-name">Имя</label>
+						<input class="modal-input" type="text" name="user-name" id="user-name">
+						<svg class="icon-modal" Width="18" Height="18">
+							<use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+						</svg>
+					</div>
+					<div class="form-field">
+						<label class="form-label" for="user-tel">Телефон</label>
+						<input class="modal-input" type="tel" name="user-tel" id="user-tel">
+						<svg class="icon-modal" Width="18" Height="18">
+							<use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+						</svg>
+					</div>
+					<div class="form-field">
+						<label class="form-label" for="user-mail">Почта</label>
+						<input class="modal-input" type="email" name="user-mail" id="user-mail">
+						<svg class="icon-modal" Width="18" Height="18">
+							<use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+						</svg>
+					</div>
+					<div class="form-field textarea-field">
+						<label class="form-label" for="user-comment">Комментарий</label>
+						<textarea class="modal-textarea" name="user-comment" id="user-comment" rows="10"
+							placeholder="Введите текст"></textarea>
+					</div>
+					<div class="policy-field">
+						<input class="checkbox" type="checkbox" name="user-policy" id="policy">
+						<label class="policy-label" for="policy">
+							<span>
+								<svg class="icon-check" Width="11" Height="8">
+									<use href="./images/icons.svg#icon-icon-check"></use>
+								</svg>
+							</span>Соглашаюсь с рассылкой и принимаю <a class="policy-text" href="">Условия договора</a></label>
+					</div>
+					<button class="button button-modal" type="submit">Отправить</button>
+				</form>
 			</div>
 		</div>
 	</footer>
