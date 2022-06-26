@@ -468,12 +468,13 @@ img {
 
 .footer {
   padding-top: 60px;
+	padding-bottom: 60px;
   background-color: var(--acent);
 }
 
 .footer-container {
-	position: relative;
   display: flex;
+	align-items: baseline;
 }
 
 .adress .link {
@@ -486,11 +487,10 @@ img {
 
 .social-footer {
   width: 206px;
-  margin-left: 70px;
+	margin-left: 70px;
 }
 
 .text-footer-sicial {
-  margin-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14em;
@@ -498,11 +498,10 @@ img {
   color: var(--background);
 }
 
-.social-footer.list {
+.social-list.list {
   display: flex;
-  justify-content: space-between;
-  margin-left: 0px;
-  padding-bottom: 100px;
+  align-items: center;
+
 }
 
 .social-icon-footer {
@@ -527,12 +526,10 @@ img {
 }
 
 .follow{
-	position: absolute;
-	right: 15px;
+	margin-left: auto;
 }
 
 .text-follow{
-	margin-top: 12px;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.14em;
@@ -730,11 +727,13 @@ img {
 }
 
 .modal-close-btn {
+	padding: 0;
   position: absolute;
   right: 8px;
   top: 8px;
   display: flex;
   align-items: center;
+	justify-content: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -760,7 +759,7 @@ img {
 }
 
 .modal-title{
-	margin-bottom: 30px;
+	margin-bottom: 12px;
 	font-weight: 700;
   font-size: 20px;
   line-height: 1.15em;
